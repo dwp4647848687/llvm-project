@@ -137,6 +137,10 @@ extern volatile int ZirconModuleAnchorSource;
 static int LLVM_ATTRIBUTE_UNUSED ZirconModuleAnchorDestination =
     ZirconModuleAnchorSource;
 
+extern volatile int MDOneModuleAnchorSource;
+static int LLVM_ATTRIBUTE_UNUSED MDOneModuleAnchorDestination =
+    MDOneModuleAnchorSource;
+
 } // namespace clang::tidy
 
 #endif
