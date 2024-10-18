@@ -6,7 +6,8 @@
                 "${workspaceFolder}",
                 "${workspaceFolder}/clang/include",
                 "${workspaceFolder}/clang-tools-extra/clang-tidy",
-                "${workspaceFolder}/llvm/include"
+                "${workspaceFolder}/llvm/include",
+                "${workspaceFolder}/mock_llvm_missing_includes"
             ],
             "defines": [],
             "macFrameworkPath": [

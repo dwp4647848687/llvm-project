@@ -15,7 +15,6 @@
         "clang-tools-extra/clang-query": true,
         "clang-tools-extra/clang-reorder-fields": true,
         "clang-tools-extra/clangd": true,
-        // "clang-tools-extra/docs/": true,
         "clang-tools-extra/docs/_static": true,
         "clang-tools-extra/docs/_templates": true,
         "clang-tools-extra/docs/clangd": true,
