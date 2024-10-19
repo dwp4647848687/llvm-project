@@ -4,4 +4,4 @@ cmake -G "Ninja" \
   -DCMAKE_BUILD_TYPE=Release \
   ../llvm
 
-ninja clang-tidy
+ninja -j$(nproc) clang-tidy

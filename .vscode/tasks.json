@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "fix",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/bin/clang-tidy",
+            "args": [
+                "-fix",
+                "${file}",
+                "--",
+                "-std=c++17"
+            ],
+            "options":
+            {
+                "env":
+                {
+                    "WORKSPACE_ROOT": "${workspaceFolder}"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Run clang-tidy with fix"
+        }
+    ]
+}

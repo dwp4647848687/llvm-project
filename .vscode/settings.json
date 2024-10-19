@@ -166,5 +166,7 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "format": "cpp"
-    }
+    },
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.runAutomatically": true,
 }
