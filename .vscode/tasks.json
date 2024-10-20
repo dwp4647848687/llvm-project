@@ -9,7 +9,13 @@
                 "-fix",
                 "${file}",
                 "--",
-                "-std=c++17"
+                "-std=c++17",
+                "-isystem/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1",
+                "-isysroot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+                // "-isystem${workspaceFolder}/libcxx/include",
+                "-I${workspaceFolder}/build/tools/clang/include",
+                "-I${workspaceFolder}/llvm/include",
+                "-I/usr/local/include",
             ],
             "options":
             {
@@ -17,6 +23,7 @@
                 {
                     "WORKSPACE_ROOT": "${workspaceFolder}"
                 }
+                
             },
             "group": {
                 "kind": "build",
